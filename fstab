@@ -6,5 +6,9 @@ UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx /tmp ext4 defaults 0 0
 UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx /var ext4 defaults 0 0
 UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx /home ext4 defaults,nodev,nosuid 0 0
 
+# Change of other partitions for extra hardening
+proc /proc proc rw,nosuid,nodev,noexec,relatime,hidepid=2 0 0
+devtmpfs /dev devtmpfs rw,nosuid,noexec,size=10240k,nr_inodes=1971155,mode=755,inode64 0 0
+
 # Partition layout with LVM/LUKS
 To be added...
