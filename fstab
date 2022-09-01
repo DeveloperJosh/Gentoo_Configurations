@@ -1,0 +1,10 @@
+# Partition layout without LVM/LUKS
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx /boot vfat defaults,nodev,nosuid,noexec 1 2
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx none swap sw 0 0
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx / ext4 defaults 0 1
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx /tmp ext4 defaults 0 0
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx /var ext4 defaults 0 0
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx /home ext4 defaults,nodev,nosuid 0 0
+
+# Partition layout with LVM/LUKS
+To be added...
